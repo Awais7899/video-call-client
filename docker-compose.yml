@@ -1,0 +1,8 @@
+version: "3"
+services:
+  help-so-easy-client:
+    build: .
+    ports:
+      - 8080:80
+    environment:
+      - NODE_OPTIONS="--max-old-space-size=8192"
